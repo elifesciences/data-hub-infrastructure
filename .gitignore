@@ -1,0 +1,5 @@
+# ignore terraform local files
+**/.terraform/*
+
+# ignore plan files
+**/plan.plan
