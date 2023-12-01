@@ -42,7 +42,7 @@ resource "aws_iam_policy" "sciety_events_read_only" {
 }
 
 
-resource "aws_iam_group_policy_attachment" "read-write-role-policy-attachment" {
+resource "aws_iam_group_policy_attachment" "sciety_events_read_only_role_policy_attachment" {
   group      = var.data_hub_user_group_name
   policy_arn = aws_iam_policy.sciety_events_read_only.arn
 }

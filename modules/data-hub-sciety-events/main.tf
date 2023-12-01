@@ -42,7 +42,7 @@ resource "aws_iam_policy" "sciety_events_read_only" {
   tags = local.tags
 }
 
-resource "aws_iam_role_policy_attachment" "import-role-s3-read-write-policy-attachment" {
+resource "aws_iam_role_policy_attachment" "import_role_s3_read_only_policy_attachment" {
   role       = var.data_hub_worker_role_name
   policy_arn = aws_iam_policy.sciety_events_read_only.arn
 }
