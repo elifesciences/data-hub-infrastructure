@@ -5,8 +5,8 @@ This repository contains all the code for defining Data Hub's external infrastru
 # Infrastructure
 
 - S3 Bucket
-- policy granting access read/write to S3 Bucket
-- Role with read/write policy applied and granted to EKS cluster service account via IRSA
+- policy granting access  to S3 Bucket
+- Roles with policy applied and granted to EKS cluster service account via IRSA
 
 # Run linting and validators
 
