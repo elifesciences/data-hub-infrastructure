@@ -8,7 +8,7 @@ locals {
   }
 }
 
-resource "aws_iam_policy" "read_write" {
+resource "aws_iam_policy" "sciety_events_read_only" {
   name        = "${local.project_name}-${var.env}-sciety_events_read_only_access"
   path        = "/"
   description = "${local.project_name} ${var.env} read-only access to ${local.sciety_events_bucket_name} S3 Bucket"
@@ -44,5 +44,5 @@ resource "aws_iam_policy" "read_write" {
 
 resource "aws_iam_role_policy_attachment" "import-role-s3-read-write-policy-attachment" {
   role       = var.data_hub_worker_role_name
-  policy_arn = aws_iam_policy.read_write.arn
+  policy_arn = aws_iam_policy.sciety_events_read_only.arn
 }
