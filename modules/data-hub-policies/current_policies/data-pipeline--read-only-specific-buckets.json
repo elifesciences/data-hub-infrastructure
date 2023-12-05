@@ -1,0 +1,25 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1548652681000",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket",
+        "s3:ListBucketMultipartUploads",
+        "s3:ListObjects"
+      ],
+      "Resource": [
+        "arn:aws:s3:::elife-ejp-ftp",
+        "arn:aws:s3:::elife-ejp-ftp/*",
+        "arn:aws:s3:::elife-ejp-ftp-db-xml-dump",
+        "arn:aws:s3:::elife-ejp-ftp-db-xml-dump/*",
+        "arn:aws:s3:::elife-ejp-ftp-db-xml-dump--test",
+        "arn:aws:s3:::elife-ejp-ftp-db-xml-dump--test/*",
+        "arn:aws:s3:::elife-ejp-ftp--test",
+        "arn:aws:s3:::elife-ejp-ftp--test/*"
+      ]
+    }
+  ]
+}

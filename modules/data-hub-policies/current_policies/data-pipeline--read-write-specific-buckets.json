@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1548652021000",
+      "Effect": "Allow",
+      "Action": [
+        "s3:DeleteObject",
+        "s3:GetObject",
+        "s3:ListBucket",
+        "s3:ListBucketMultipartUploads",
+        "s3:ListMultipartUploadParts",
+        "s3:AbortMultipartUpload",
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::ci-elife-data-pipeline",
+        "arn:aws:s3:::ci-elife-data-pipeline/*",
+        "arn:aws:s3:::prod-elife-data-pipeline",
+        "arn:aws:s3:::prod-elife-data-pipeline/*",
+        "arn:aws:s3:::staging-elife-data-pipeline",
+        "arn:aws:s3:::staging-elife-data-pipeline/*",
+        "arn:aws:s3:::flux-elife-data-pipeline",
+        "arn:aws:s3:::flux-elife-data-pipeline/*",
+        "arn:aws:s3:::elife-ejp-review-data",
+        "arn:aws:s3:::elife-ejp-review-data/*"
+      ]
+    }
+  ]
+}

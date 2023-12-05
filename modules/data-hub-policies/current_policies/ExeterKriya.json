@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1491402786000",
+            "Effect": "Allow",
+            "Action": [
+                "s3:AbortMultipartUpload",
+                "s3:List*",
+                "s3:Get*",
+                "s3:Put*",
+                "s3:DeleteObject*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::prod-elife-kriya",
+                "arn:aws:s3:::prod-elife-kriya/*"
+            ]
+        }
+    ]
+}
