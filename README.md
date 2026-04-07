@@ -19,7 +19,7 @@ This repository contains all the code for defining Data Hub's external infrastru
 Use `terraform plan` within an environment, or use the helpful makefile tasks:
 
 ```bash
-make staging-plan
+make stg-plan
 make prod-plan
 ```
 
@@ -28,8 +28,8 @@ make prod-plan
 The easiest way to check and apply changes is using the makefile:
 
 ```bash
-make staging-plan
-make staging-plan-apply
+make stg-plan
+make stg-plan-apply
 ```
 against staging, then
 
@@ -42,6 +42,6 @@ for prod.
 The exact output shown in the plan phase is what is applied (via a plan.plan output file). Alternative, you can just apply all outstanding changes using:
 
 ```bash
-make staging-apply
+make stg-apply
 make prod-apply
 ```
